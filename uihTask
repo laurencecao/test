@@ -1,0 +1,337 @@
+
+Scrum: client -> PO -> Manager -> RnD Sprint.
+RPM work style: like in warcraft playing, relatively high RPM, accurate operation, parallel manipulation.
+
+>> figure, imshow(edge(img, 'canny', [0.01 0.1], 4));
+>> figure, imshow(edge(img, 'canny', [0.01 0.1], 5));
+>> figure, imshow(edge(img, 'canny', [0.01 0.1], 6));
+
+
+
+# Sprint
+Prototype:
+Find bladder 6h
+find kidneys 12h
+Segment bladder 6h
+Segment kidneys 12h
+Find approx ureters 12h
+
+Lihua: floodfill, output all indices and voxel number.
+bwlabel. (16h).
+Matrix flip research. (12h).
+Hessian matrix calculation. (12h).
+Hough transform.
+CTRecon Heterogenous GPU. (16h)
+
+
+Image padding with 128bit-alignment.
+Rewrite Otsu in float? Multi-level? (10h)
+SSE, AVX acceleration. (16h)
+
+Dilate 3D prototype. 使用findEdge，一起90ms以内。500x500x500, 363ms.
+Erode 3D. Bug fixed. Definition version, >300ms. Border value being 1.
+Testing report and tech report. Test: 500x500x1000 Data with border touching. ball kernel, rectangle kernel.
+
+3D convolution. ImgPadding, 64byte alignment, Symmetric.
+Add matlab gold standard to UT.
+Doxygen produce chm file, and search is ready!
+Search keywords: kidney/urethra medical image
+
+Survey urine imaging, kidney.
+Upload data to Syngo Via. Kidney stone.
+
+philip: kidney: 10~200HU
+
+kidneySeg: size, shape, location, intensity.
+Register-based segmentation.
+
+
+~ Yesterday
+AML re-structuring code review, send mail and upload.
+PS finished.
+
+- Today
+
+kidney background.
+CRC preproc QA.
+GC weights.
+
+Segmentation and centerline.
+Scrum in details.
+Derivatives, matrix calculus, copula, chebyshev filters, lddmm formula.
+
+
+= Tomorrow
+Hough Transform: line, ellipse.
+GHT
+
+
+
+AI问题：
+
+1. 代码可读性不强，文档弱，函数写得冗长并且不够通用。
+2. 不追踪先进算法，使用简单的图像操作根据经验修修补补，缺乏理论体系和逻辑框架。
+3. 缺乏层次和技术深入，为了做项目而浅尝辄止。世界上有的光专门做配准的项目就做了很久，囊括了各种先进数值算法，我们就只满足于itk现有函数。
+
+
+linux
+10.8.110.250
+uih340
+ia123456
+
+
+ip 10.8.110.7
+gateway 10.8.110.254
+
+
+
+printer
+打印机安装位置，如下
+\\10.6.2.26
+选择：大厅刷卡打印机。
+
+
+https://github.com/silencej/test.git
+P pdf
+D doc
+Dx docx
+PPx pptx
+
+
+
+各位同事：
+大家好！
+自ERP系统上线以来，大家均在系统里自助申请各类假期，但因假期类型较多，出现了较多误操作，因系统会根据假期类型自动扣除薪资，现针对ERP自助休假申请模块容易出错的类型作如下特别说明：
+1，“事假unpaid Leave”：事假为年假使用完后，才能申请的假期，事假期间系统会自动扣除工资；
+2，“带薪病假Paid Sick Leave”：带薪病假为公司每年给予正式员工的5天全薪病假（不满一年按照服务期折算，入职前三个月或离职通知期内不可申请全薪病假），此类病假不扣薪；
+3，“短病假Short Sick Leave”：短病假为“带薪病假”使用完后，才能申请的假期，3个月以内的病假可申请短病假，短病假期间系统会自动根据工龄扣除工资；
+因系统即将并行结束，届时HR将无法判断休假扣薪是否为误操作，请大家今后请假时特别留意，以避免因误操作导致自动扣薪！
+另，因员工自助休假申请无法追溯（比如：1月份的假期申请2月份再去审批，因1月份工资已完成，系统将无法扣除补批的假期），烦请各部门负责人及时审批员工休假申请！
+另，在系统里请以下假期后，请及时提交相关资料以作为休假凭证：
+①	婚假：提供夫妻双方任何一方结婚证复印件
+②	病假：医院就诊病历本首页及就诊页复印件+医生出具的病假单原件
+③	产假：待小孩出生后，需补小孩出生医学证明复印件及社保局领取相关待遇的复印件
+④	陪护假：带小孩出生后，需补小孩出生医学证明复印件
+以上，请转发各BU同事，大家在操作ERP系统自助服务时遇到任何问题，请及时联系我们（HR办公室：A-510 分机：6622），非常感谢理解与配合！
+Junmei
+鄢俊美
+Junmei Yan
+
+
+
+
+是可以通过espace拨打外线及国外号码的，拨打方式与以前用座机的拨打方式相同，外线号码9+号码，国外号码：9+国家号+号码。
+1.	右键点击电脑右下角的espace图标，进入个人管理平台，若网页提示不安全请继续
+2.	呼叫管理-呼叫转移，底下有多种模式可选，可根据自身需要去转接，但记得要加9，如果是外地手机就要加90
+
+
+如果有同事的espace无法正常工作，或者对功能有疑问，请与IT yangchuanfu 联系。
+
+因为从张江搬迁到基地上班，现在可以取消使用张江代理10.1.2.14的设置连接TFS。有设置过代理的同事可以在VS里的菜单TOOLS—Options—Source Control里的Visual Studio目录里，把use proxy server for file downloas 勾去掉即可。
+
+
+
+
+午休（含午餐）时间：
+第一批用餐时间：11:45——12:45   
+第一批用餐BU：B区（XR、IT）  C区：（HSW、MI、CT、RT、SQM、PUR、QM、LG、ERM、）
+第二批用餐时间：12:15——13:15
+第二批用餐BU：A区（CO、MR、CRC、CRM、其他HQ）
+公司午休（含午餐）时间为1小时，请大家严格遵守。
+
+中午：11:45---13:15
+晚餐：17:30---19:00提供套餐
+     19:00---19:30仅提供面食
+
+
+1）	离开座位时请将椅子推到桌子下面去；
+2）	无论是任何时候请不要在办公室内大声喧哗，包括午饭和晚饭休息时间；
+3）	在办公室里请把你的手机至于振动或静音状态；
+
+这9点内容我觉得是非常基本的要求，希望大家日后自觉遵守！
+
+对于我们高大上的新基地，公司希望大家都能当成自己家一样的好好爱护。
+让我们从小处做起，从我们的办公室做起：
+1）	注意办公桌上的整洁，尽可能的将电脑之外的物品放入柜子。
+2）	注意座位周边的清洁，这边的地毯不太好清扫，尽量不在办公室吃有碎屑的东西。
+3）	注意窗户和空调，开窗的时候请关闭空调；开空调的时候请关闭窗户。
+4）	注意灯光，白天光线充足的时候请关闭办公室的照明灯；光线尚可的时候可关闭一半的照明灯。
+5）	下班最后离开办公室的同事请记得关灯，关空调。
+6）	尤其注意洗手间（尤其是我们办公室附近的）卫生。
+
+
+
+
+现在HR PeopleSoft系统已经正式启用，从即日起，员工请假必须由本人在系统中提出申请并等待审批；如有员工在外期间有临时情况无法登陆系统请假者，请邮件或电话向部门经理请假，如请假者当月可以返回公司则在返回后在系统上补交申请，如不能当月返回公司则需要部门经理代其提交请假申请。
+
+备注：如病假、婚假等需要提交证明文件的，则需要依旧将证明文件纸质版交给我以转交HR备忘。
+
+http://hr.united-imaging.com:8000/psp/ps/EMPLOYEE/HRMS/?&
+
+
+自ERP系统上线以来，大家均在系统里自助申请各类假期，但因假期类型较多，出现了较多误操作，因系统会根据假期类型自动扣除薪资，现针对ERP自助休假申请模块容易出错的类型作如下特别说明：
+1，“事假unpaid Leave”：事假为年假使用完后，才能申请的假期，事假期间系统会自动扣除工资；
+2，“带薪病假Paid Sick Leave”：带薪病假为公司每年给予正式员工的5天全薪病假（不满一年按照服务期折算，入职前三个月或离职通知期内不可申请全薪病假），此类病假不扣薪；
+3，“短病假Short Sick Leave”：短病假为“带薪病假”使用完后，才能申请的假期，3个月以内的病假可申请短病假，短病假期间系统会自动根据工龄扣除工资；
+因系统即将并行结束，届时HR将无法判断休假扣薪是否为误操作，请大家今后请假时特别留意，以避免因误操作导致自动扣薪！
+另，因员工自助休假申请无法追溯（比如：1月份的假期申请2月份再去审批，因1月份工资已完成，系统将无法扣除补批的假期），烦请各部门负责人及时审批员工休假申请！
+另，在系统里请以下假期后，请及时提交相关资料以作为休假凭证：
+①	婚假：提供夫妻双方任何一方结婚证复印件
+②	病假：医院就诊病历本首页及就诊页复印件+医生出具的病假单原件
+③	产假：待小孩出生后，需补小孩出生医学证明复印件及社保局领取相关待遇的复印件
+④	陪护假：带小孩出生后，需补小孩出生医学证明复印件
+以上，请转发各BU同事，大家在操作ERP系统自助服务时遇到任何问题，请及时联系我们（HR办公室：A-510 分机：6622），非常感谢理解与配合！
+
+
+
+AW4.6的单机版工作站也已经Ready了，在实验室一进门左手侧的桌面上有两台显示器；
+普通用户名/密码为：sdc/adw4.6
+管理员用户名/密码为：root/operator
+使用管理员帐户登录后千万别把系统搞坏，如果需要恢复系统则要请我吃“梦龙”牌雪糕哈！
+
+
+经过一段时间的试运行，大部分同事已经从4.0版本迁移至5.0；
+为了节省资源，从即日起10.8.110.203节点上的portal4.0停止运行。
+还未完成迁移的同事，请登录10.8.110.209完成更新，谢谢！
+
+
+Portal 5.0 访问方式如下：
+http://10.8.110.209
+用户名/密码： admin/portal
+
+为portal5添加了新用户和密码；
+test/test
+test1/test1
+test2/test2
+
+======
+试用方式和之前的4.0版本没有任何区别。
+5.0版本有了Dental和肝分割应用，还增加了许多MI的应用；
+======
+VES 6.5.3
+http://10.8.110.205
+用户名/密码： Adv1/Adv1
+======
+请注意，该客户端的入口是IE浏览器，其它浏览器暂不支持哦。
+同样有肝分割的应用，并且是B/S架构？
+
+
+公共机 web
+\\10.6.2.13\Public\Public01
+\\10.6.2.28
+
+Potal的新IP地址为：10.8.110.203；
+新狗娃的新IP地址为：10.8.110.204；
+test01/test01
+AWS的IP地址为：10.8.110.202；
+
+厂商	工作站	登录IP	用户名/密码
+Philips	Portal 4.0 Server	10.8.110.203	test/test, test01/test01, test02/test02, test03/test03, test04/test04;
+Siemens	Syngo Via 11A	10.8.110.204	test/uihtest
+GE	AWS 2.0	10.8.110.202	test/uih&01
+
+
+p.s. 目前不是110字段下的用户有可能无法访问，请
+到我旁边的房间使用中间那台测试机访问，谢谢～
+
+
+
+
+张江服务器搬迁到新基地，原服务器地址需要更改如下
+
+Tfsbuild2       10.1.2.8   => 10.6.2.5
+Tfsbuild1       10.1.2.12  =>10.6.2.12
+张江文件服务器  10.1.2.13  =>10.6.2.14
+
+
+ZHENGHE的DroupLocation由\\10.1.2.12\build_result\MCSF改为\\10.6.2.12\build_result\MCSF 。
+UIDeal_AWS的DroupLocation由\\10.1.2.12\build_result\UIDeal_AWS改为\\10.6.2.12\build_result\UIDeal_AWS。
+
+由于IP地址有所更改。所以有下面2点需要注意：
+（1）	ZHENGHE的DroupLocation由\\10.1.2.12\build_result\MCSF改为\\10.6.2.12\build_result\MCSF 。
+UIDeal_AWS的DroupLocation由\\10.1.2.12\build_result\UIDeal_AWS改为\\10.6.2.12\build_result\UIDeal_AWS。
+请大家在查看编译Log的时候，到新地址查看。
+（2）	存放Package包的位置由\\10.1.2.13\SW_Publish 改为\\10.6.2.14\SW_Publish 。
+
+
+新的license已经生成并存放在 $/MCSF/06_Installation/License/R&D。
+请大家按需取用。
+注意：从TFS上取下来的文件是只读的，需要先去掉只读。
+
+
+
+PLM
+
+PLM账号已开通，账号为邮箱前缀（例shumei.wang），初始密码：123456，请立即登陆修改密码。
+wcfNote: Have already changed to the same password as windows log-on.
+
+距离PLM系统一期上线已四个月，在这四个月当中，我们持续优化和改善了很多功能和流程，时至今日更能满足联影的流程要求。同时，我们也已完成了XR, HSW的历史数据收集和整理，包括
+物料、 BOM、 DHF、 DMR文档，这些历史数据也已全部导入PLM系统。在大家搬迁至新基地之时，决定XR, HSW BU正式上线PLM系统
+这也意味着，联影所有BU完成PLM系统上线。从3月份开始，联影所有产品的文档发布，BOM管理，CR管理等流程都将在PLM系统进行。 
+
+1.	由于PLM系统包含的功能较多，且所有功能都是根据联影的质量体系流程定制的，后续可能还需要微小的调整，其上线的功能包括：
+
+- 物料管理功能
+- BOM管理功能
+- 文档管理功能
+- Solidworks与Agile系统集成
+- 流程管理（CR流程、符号封装和layout制作流程）
+
+
+2.	以下为PLM系统登陆地址和培训资料地址：
+- PLM正式系统地址：http://plm.united-imaging.com:7001/Agile/ （正式系统严禁建立任何测试数据，如有操作问题，请登录测试系统练习）
+- PLM测试系统地址：http://plmtest.uih.com:7001/Agile/
+账号为邮箱前缀（例shumei.wang），默认密码：123456
+- 培训资料地址：\\10.6.2.13\bu\QM\3_Training\Training Material\PLM ，包括ppt培训资料和视频培训资料，在3月10日前我们组织关键用户的培训。
+- 首批开通帐号的用户，3月5日将会收到系统管理员发送的邮件，账号为邮箱前缀（例shumei.wang），初始密码：123456，请立即登陆修改密码。如需申请帐号，请填写《PLM系统帐户申请表》，经部门经理和项目经理签字批准后交至查宝娟 baoijuan.zha@united-imaging.com
+
+由于PLM系统完全基于联影的流程进行配置和开发，所以可能仍存在需要改进和优化的地方，如在使用过程中，遇到任何问题或有任何建议，请及时联系PLM管理员：
+
+- 文件、图档请联系： 吴婵燕，   chanyan.wu@united-imaging.com
+- 物料、BOM、CR请联系：查宝娟， baoijuan.zha@united-imaging.com
+
+另外，QM新基地办公室在C区三层，欢迎大家打扰！
+
+
+signature
+
+Header file:
+
+//////////////////////////////////////////////////////////////////////////
+///  Copyright, (c) Shanghai United Imaging Healthcare Inc., 2014
+///  All rights reserved. 
+/// 
+///   \author   Wang, Chaofeng <chaofeng.wang@united-imaging.com>
+/// 
+///   \file     .h
+/// 
+///   \brief    Describe it!
+/// 
+///   \version  1.0
+/// 
+///   \date     Nov ?, 2014
+//////////////////////////////////////////////////////////////////////////
+#pragma once
+#ifndef _H_
+#define _H_
+
+#endif
+
+==========
+Cpp file:
+
+//////////////////////////////////////////////////////////////////////////
+///  Copyright, (c) Shanghai United Imaging Healthcare Inc., 2014
+///  All rights reserved. 
+/// 
+///   \author   Wang, Chaofeng <chaofeng.wang@united-imaging.com>
+/// 
+///   \file     .cpp
+/// 
+///   \brief    See header file.
+/// 
+///   \version  1.0
+/// 
+///   \date     Nov ?, 2014
+//////////////////////////////////////////////////////////////////////////
+

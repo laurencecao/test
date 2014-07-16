@@ -1,0 +1,192 @@
+﻿
+memo
+
+hr.united-imaging.com
+chaofeng.wang
+usual 7.
+
+S.via已经可以用了，
+请登录：http://10.1.4.202 并选择安装客户端；
+登录信息：
+	用户名：test
+	密码：uihtest
+有几点需要说明：
+1）	暂时无法从客户端导入数据，如需要请联系兆宁或李艳导入；
+2）	MR的一些后处理应用暂时无法使用，请测试CT和PET的应用；
+3）	由于受硬件限制，最多只能有3个用户同时使用，如果你发现系统提示Overload了，
+那就是其他人在用，请稍候再试，谢谢；
+
+
+D:\MCSF\UIH\appdata\systemmanager\config下面的SystemManagerStartProcess.xml里面有各个应用的配置，把vc的HideConsole="1"改成HideConsole="0"
+就可以attach了
+
+
+\\sw-mengxiaolin\VMware\debian
+sudo mount -t smbfs -o username=chaofeng.wang //it-d1145/vbShare /mnt/vbShare
+
+vc bugs:
+sv 161
+OK|1|1.3.6.1.4.1.9328.50.6.90318
+OK|1|1.3.6.1.4.1.9328.50.6.90620
+
+
+1416
+using interaction
+UIDtype: other
+
+
+# VC:
+
+NIH:
+OK|1|1.3.6.1.4.1.9328.50.6.1008
+
+SD VC-192M
+俯卧
+OK|1|1.3.6.1.4.1.9328.50.6.101249
+仰卧
+OK|1|1.3.6.1.4.1.9328.50.6.101610
+
+\\10.1.2.13\ImageAnalysisData\Colonoscopy\NIH\Groundtruth
+SD VC-006M
+OK|1|1.3.6.1.4.1.9328.50.6.3295
+OK|1|1.3.6.1.4.1.9328.50.6.3595
+
+12014
+ShowFindings|1.3.6.1.4.1.9328.50.6.3295
+1.3.6.1.4.1.9328.50.6.3295|ShowDiameters
+
+\\10.1.2.13\ImageAnalysisData\UIH CTdata
+
+
+# LD:
+OK|1|1.3.6.1.4.1.9328.50.3.112498
+OK|1|1.3.6.1.4.1.9590.100.1.2.61722889911168798738612223142809921539
+OK|1|1.3.6.1.4.1.9590.100.1.2.389806056413943134817100404602423172021
+OK|1|1.3.6.1.4.1.9328.50.6.3294
+OK|1|1.3.6.1.4.1.9328.50.3.112498
+OK|1|1.2.156.112605.0.0.20120329.1.1
+
+# LN:
+036:
+OK|1|1.3.6.1.4.1.9328.50.3.2723
+
+appcommon
+里面的
+uih.mcsf.app.common
+mcsf_app_containee_base.cs
+// w.WindowStyle = WindowStyle.None;  //  这个注释去掉
+
+
+
+IS
+
+Fake as Visual Studio to crack down esafenet
+Rename all the exe to devenv.exe, and then drag encrypted files into this exe, Bingo!
+
+
+北信源 VRV
+
+用户填写本机信息，填写必要信息后上报区域管理器。注册程序自动探测系统硬件信息，连同用户填写的信息一同上报区域管理器。用户将本机注册信息发送到区域管理器后，区域管理器自动将客户端驻留程序应用策略发送给用户，并自动更新。
+
+客户端驻留程序功能：
+	进行本机硬件属性信息变化监视；
+	进行本机IP、MAC地址变化审计；
+	本机系统补丁、软件安装、运行进程状况监测；
+	探测本机是否有违规联网行为，在内网管理中心或外网报警平台报警；
+	接受Web管理平台的管理命令；
+	阻断本机违规外联行为；
+
+执行Web管理平台下发的各种策略操作。
+
+
+zhenghe
+
+\\10.1.2.13\Public\03-SW\SW_chengzhaoningDATA\MRS Clinic trial version
+
+\\10.1.2.13\SW_Publish\UIDeal_BuildOutput\
+packages:
+\\swcmfsrv1\sw_publish\UIDeal_BuildOutput\
+
+Try:
+PACKAGE-Full-UIDeal_AWS.1.0.0.48.0.20130321.118098
+
+Good:
+PACKAGE-Full-UIDeal_AWS.1.0.0.46.0.20130227.112292
+
+Bad:
+PACKAGE-Full-UIDeal_AWS.1.0.0.48.0.20130320.117881
+
+\\10.1.2.13
+\\10.1.2.13\Public\03-SW\chaofeng.wang
+
+\\10.6.2.13\tools\Drivers\drivers
+
+问下那个可以用的肺数据的地址 
+\\10.1.2.13\Public\03-SW\SW-LIMO\TestImages\LungDensity\20121221LD\17053_nor
+
+TEST目录所在地
+\\10.1.2.13\Public\03-SW\SW_AA\utilites
+
+\\10.1.2.13\ImageAnalysisData\Colonoscopy\NIH
+
+\\10.1.2.13\bu\SW
+
+\\10.1.2.13\Public\03-SW\SW_Tang Song
+
+
+\\10.1.2.13\Public\03-SW\SW_Viewer\E-book
+
+DATA:
+\\10.1.2.13\Public\03-SW\SW_liangliang.pan\TOLYP DICOM data
+
+
+
+vs assisstant tomato path
+
+C:\Users\chaofeng.wang\AppData\Local\Microsoft\VisualStudio\10.0\Extensions\Whole Tomato Software\Visual Assist X\
+
+
+
+
+signature
+
+Header file:
+
+//////////////////////////////////////////////////////////////////////////
+///  Copyright, (c) Shanghai United Imaging Healthcare Inc., 2013
+///  All rights reserved. 
+/// 
+///   \author   Wang, Chaofeng <chaofeng.wang@united-imaging.com>
+/// 
+///   \file     .h
+/// 
+///   \brief    Describe it!
+/// 
+///   \version  1.0
+/// 
+///   \date     Nov ?, 2013
+//////////////////////////////////////////////////////////////////////////
+#pragma once
+#ifndef _H_
+#define _H_
+
+#endif
+
+==========
+Cpp file:
+
+//////////////////////////////////////////////////////////////////////////
+///  Copyright, (c) Shanghai United Imaging Healthcare Inc., 2013
+///  All rights reserved. 
+/// 
+///   \author   Wang, Chaofeng <chaofeng.wang@united-imaging.com>
+/// 
+///   \file     .cpp
+/// 
+///   \brief    See header file.
+/// 
+///   \version  1.0
+/// 
+///   \date     Nov ?, 2013
+//////////////////////////////////////////////////////////////////////////
+
